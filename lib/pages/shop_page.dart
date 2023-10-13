@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-
-import '../components/shoe_tile.dart';
+import 'package:study/components/shoe_tile.dart';
+import 'package:study/models/shoe.dart';
 
 class ShopPage extends StatefulWidget {
-  const ShopPage({super.key});
+  const ShopPage({Key? key}) : super(key: key);
 
   @override
-  State<ShopPage> createState() => _ShopPageState();
+  _ShopPageState createState() => _ShopPageState();
 }
 
 class _ShopPageState extends State<ShopPage> {
@@ -14,7 +14,7 @@ class _ShopPageState extends State<ShopPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        //search bar
+        // Search bar
         Container(
           padding: const EdgeInsets.all(13.0),
           margin: const EdgeInsets.all(13.0),
@@ -42,7 +42,7 @@ class _ShopPageState extends State<ShopPage> {
           ),
         ),
 
-        //message
+        // Message
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 15.0),
           child: Text(
@@ -55,7 +55,7 @@ class _ShopPageState extends State<ShopPage> {
           ),
         ),
 
-        //hot picks
+        // Hot Picks
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 35.0, vertical: 15.0),
           child: Row(
@@ -83,10 +83,21 @@ class _ShopPageState extends State<ShopPage> {
         const SizedBox(
           height: 10,
         ),
+        // Hot Picks List
         Expanded(
           child: ListView.builder(
+            itemCount: 6,
+            scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
-              return ShoeTile();
+              Shoe shoe = Shoe(
+                name: 'Gel Kahana8',
+                imagePath: 'assets/images/solomon-xt6.png',
+                price: '75\$',
+                description: 'best shoes in the world', 
+              );
+              return ShoeTile(
+                shoe: shoe,
+              );
             },
           ),
         ),
