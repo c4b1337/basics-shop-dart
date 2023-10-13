@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:study/components/bottom_nav_bar.dart';
+import 'package:study/pages/cart_page.dart';
+import 'package:study/pages/shop_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,10 +27,10 @@ class _HomePageState extends State<HomePage> {
   //pages to display
   final List<Widget> pages = [
     //shop pages
-    // const ShopPage(),
+    const ShopPage(),
 
     // //cart pages
-    // const CartPage(),
+    const CartPage(),
   ];
 
 
