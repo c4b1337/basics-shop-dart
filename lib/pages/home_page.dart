@@ -23,7 +23,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   //pages to display
-  //TODO: add pages here
+  final List<Widget> pages = [
+    //shop pages
+    // const ShopPage(),
+
+    // //cart pages
+    // const CartPage(),
+  ];
 
 
   @override
