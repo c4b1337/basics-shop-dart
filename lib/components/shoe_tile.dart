@@ -19,11 +19,11 @@ class ShoeTile extends StatelessWidget {
       child:  Column(
         children: [
           //shoe picture
-          Image.asset(shoe.imagePath)
+          Image.asset(shoe.imagePath),
           //description
 
           //price and details
-
+          Text(shoe.price.toString()),
           //button to add to cart 
         ],
       ),
