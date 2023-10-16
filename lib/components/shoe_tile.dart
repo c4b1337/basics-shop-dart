@@ -47,24 +47,30 @@ class ShoeTile extends StatelessWidget {
           ),
           //button to add to cart
           ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.grey[600],
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-            child: const Padding(
-              padding:  EdgeInsets.symmetric(horizontal: 10.0),
-              child: Text(
-                'Add to cart',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w500,
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.grey[600],
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
-            )
+              child: const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: Text(
+                  'Add to cart',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              )),
+          const Padding(
+            padding: EdgeInsets.only(top: 5.0, left: 10, right: 10),
+            child: Divider(
+              height: 20,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
