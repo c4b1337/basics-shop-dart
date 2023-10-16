@@ -43,17 +43,17 @@ class _ShopPageState extends State<ShopPage> {
         ),
 
         // Message
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 15.0),
-          child: Text(
-            'everyone buys this',
-            style: TextStyle(
-              color: Colors.grey[600],
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.symmetric(vertical: 15.0),
+        //   child: Text(
+        //     'everyone buys this',
+        //     style: TextStyle(
+        //       color: Colors.grey[600],
+        //       fontSize: 14,
+        //       fontWeight: FontWeight.w400,
+        //     ),
+        //   ),
+        // ),
 
         // Hot Picks
         const Padding(
@@ -92,7 +92,7 @@ class _ShopPageState extends State<ShopPage> {
               Shoe shoe = Shoe(
                 name: 'Gel Kahana8',
                 imagePath: 'assets/images/solomon-xt6.png',
-                price: '75\$',
+                price: '75',
                 description: 'best shoes in the world', 
               );
               return ShoeTile(
