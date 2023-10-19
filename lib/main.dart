@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'pages/intro_page.dart';
+import 'package:provider/provider.dart';
+import 'package:study/models/cart.dart';
+import 'package:study/pages/intro_page.dart';
 
 void main() {
   runApp(
@@ -12,9 +14,12 @@ class BasicShop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: IntroPages(),
+    return ChangeNotifierProvider(
+      create: (context) => Cart(),
+      builder: (context, child) => const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: IntroPages(),
+      ),
     );
   }
 }
