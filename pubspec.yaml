@@ -13,6 +13,7 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   google_nav_bar: ^5.0.0
+  provider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -29,7 +30,6 @@ flutter:
     - assets/images/solomon-xt6.png
     - assets/images/Gel-Kahana8.jpg
     - assets/images/HN2-S-Protoblast.png
-    - assets/images/logo-default.png
 
   # fonts:
   #   - family: Poppins
